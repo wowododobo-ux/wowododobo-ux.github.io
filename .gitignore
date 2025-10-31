@@ -1,0 +1,33 @@
+# GitBook 產生的檔案
+_book/
+node_modules/
+
+# 系統檔案
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日誌
+*.log
+npm-debug.log*
+
+# Jekyll 相關（已移除，但保留以防萬一）
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# 環境變數
+.env
+.env.local
+
+# 臨時檔案
+*.tmp
+.claude/
