@@ -9,8 +9,16 @@
     "summary": "SUMMARY.md"
   },
   "plugins": [],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": false
+    }
+  },
   "variables": {
     "version": "1.0.0",
     "lastUpdate": "2025-11-01"
+  },
+  "links": {
+    "sidebar": {}
   }
 }
