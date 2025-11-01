@@ -1,0 +1,12 @@
+/* 隱藏 HonKit 頁腳 */
+.book .book-body .page-wrapper .page-inner section.normal footer {
+    display: none !important;
+}
+
+.gitbook-link {
+    display: none !important;
+}
+
+footer.gitbook-link {
+    display: none !important;
+}
