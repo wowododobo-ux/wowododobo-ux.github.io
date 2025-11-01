@@ -1,0 +1,885 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>九、持續改進與評估 · 企業儀表板建立準則</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        <meta name="author" content="營運績效分析小組">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-appendix.html" />
+    
+    
+    <link rel="prev" href="08-implementation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    簡介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心章節</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    一、前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-positioning.html">
+            
+                <a href="02-positioning.html">
+            
+                    
+                    二、儀表板的定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-design-principles.html">
+            
+                <a href="03-design-principles.html">
+            
+                    
+                    三、設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-kpi-framework.html">
+            
+                <a href="04-kpi-framework.html">
+            
+                    
+                    四、KPI 架構與指標設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-visualization.html">
+            
+                <a href="05-visualization.html">
+            
+                    
+                    五、視覺化設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-data-governance.html">
+            
+                <a href="06-data-governance.html">
+            
+                    
+                    六、資料治理與管理機制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-pdca.html">
+            
+                <a href="07-pdca.html">
+            
+                    
+                    七、運作機制（PDCA）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-implementation.html">
+            
+                <a href="08-implementation.html">
+            
+                    
+                    八、導入步驟建議
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="09-continuous-improvement.html">
+            
+                <a href="09-continuous-improvement.html">
+            
+                    
+                    九、持續改進與評估
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-appendix.html">
+            
+                <a href="10-appendix.html">
+            
+                    
+                    十、附錄
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >九、持續改進與評估</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="九、持續改進與評估">九、持續改進與評估</h1>
+<p>儀表板不是「做完就結束」的專案，而是需要持續演進的管理工具。</p>
+<h2 id="1-定期檢討機制">1. 定期檢討機制</h2>
+<h3 id="每季檢討：kpi-有效性審查">每季檢討：KPI 有效性審查</h3>
+<p><strong>目的</strong>：確保 KPI 仍支撐策略目標</p>
+<p><strong>檢討重點</strong>：</p>
+<p>✅ <strong>策略對齊性</strong></p>
+<pre><code>問題檢視：
+- 這個 KPI 是否仍與公司策略相關？
+- 策略調整後，KPI 是否需要更新？
+- 是否有新的關鍵議題需要追蹤？
+
+範例：
+原策略：市場佔有率最大化
+新策略：獲利優先、選擇性成長
+→ KPI 從「總營收」調整為「高毛利營收」
+</code></pre><p>✅ <strong>使用情況</strong></p>
+<pre><code>數據分析：
+- 每個 KPI 的查看次數
+- 哪些 KPI 從未被使用？
+- 哪些頁面停留時間最長？
+
+決策：
+使用率 &lt; 10% 的 KPI → 考慮移除或調整
+</code></pre><p>✅ <strong>目標合理性</strong></p>
+<pre><code>檢視達成狀況：
+- 連續 3 個月都達標 → 目標太低，需調高
+- 連續 3 個月都未達標 → 目標不合理或有系統性問題
+
+調整原則：
+目標應具挑戰性但可達成（達成率 80-120% 為佳）
+</code></pre><h3 id="檢討會議議程範本">檢討會議議程範本</h3>
+<pre><code>季度 KPI 檢討會議
+
+時間：每季第一個月第一週
+對象：KPI Owner + 高階主管
+時長：120 分鐘
+
+議程：
+1. 回顧上季整體達成狀況（20分鐘）
+2. 逐一檢視每個 KPI（60分鐘）
+   - 達成狀況
+   - 使用情況
+   - 問題與建議
+3. 策略目標變化討論（20分鐘）
+4. KPI 調整決議（20分鐘）
+   - 新增哪些 KPI？
+   - 移除哪些 KPI？
+   - 修改哪些定義？
+5. 行動計劃與責任分派（10分鐘）
+
+產出：
+□ KPI 調整清單
+□ 行動方案
+□ 下季目標設定
+</code></pre><hr></hr>
+<h2 id="2-使用者滿意度調查">2. 使用者滿意度調查</h2>
+<h3 id="每半年進行滿意度調查">每半年進行滿意度調查</h3>
+<p><strong>調查對象</strong>：所有儀表板使用者</p>
+<p><strong>調查方式</strong>：線上問卷（匿名）</p>
+<p><strong>問卷設計</strong>：</p>
+<h4 id="a-量化評分（1-5分，5分最高）">A. 量化評分（1-5分，5分最高）</h4>
+<table>
+<thead>
+<tr>
+<th>面向</th>
+<th>評估問題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>內容相關性</strong></td>
+<td>儀表板提供的資訊符合我的工作需求</td>
+</tr>
+<tr>
+<td><strong>資料準確性</strong></td>
+<td>儀表板上的數據準確可信</td>
+</tr>
+<tr>
+<td><strong>即時性</strong></td>
+<td>資料更新頻率符合我的需求</td>
+</tr>
+<tr>
+<td><strong>易用性</strong></td>
+<td>儀表板容易操作，能快速找到所需資訊</td>
+</tr>
+<tr>
+<td><strong>視覺設計</strong></td>
+<td>圖表清晰易懂，視覺設計良好</td>
+</tr>
+<tr>
+<td><strong>效能</strong></td>
+<td>儀表板載入速度快，反應靈敏</td>
+</tr>
+<tr>
+<td><strong>行動支援</strong></td>
+<td>手機/平板上的使用體驗良好</td>
+</tr>
+<tr>
+<td><strong>整體滿意度</strong></td>
+<td>整體而言，我對儀表板感到滿意</td>
+</tr>
+</tbody>
+</table>
+<h4 id="b-使用情況">B. 使用情況</h4>
+<pre><code>1. 您多久查看一次儀表板？
+   ○ 每天多次
+   ○ 每天一次
+   ○ 每週 2-3 次
+   ○ 每週一次
+   ○ 每月一次
+   ○ 很少使用
+
+2. 主要使用裝置？
+   ○ 桌上型電腦
+   ○ 筆記型電腦
+   ○ 平板
+   ○ 手機
+
+3. 最常使用的功能？（可多選）
+   □ 查看 KPI 概覽
+   □ 下鑽查看明細
+   □ 使用篩選器
+   □ 匯出資料
+   □ 設定提醒
+   □ 其他：_______
+</code></pre><h4 id="c-開放式問題">C. 開放式問題</h4>
+<pre><code>1. 您最喜歡儀表板的哪個功能或特點？
+
+2. 您認為儀表板最需要改進的地方是什麼？
+
+3. 您希望新增哪些功能或資訊？
+
+4. 其他建議：
+</code></pre><h3 id="分析與行動">分析與行動</h3>
+<p><strong>滿意度分析</strong>：</p>
+<pre><code>計算淨推薦值（NPS）：
+9-10分（推薦者）比例 - 0-6分（批評者）比例 = NPS
+
+目標：NPS &gt; 30
+優秀：NPS &gt; 50
+</code></pre><p><strong>行動計劃</strong>：</p>
+<pre><code>滿意度 &lt; 3分 的項目 → 優先改善
+使用率低但滿意度高 → 加強推廣
+使用率高但滿意度低 → 必須立即改善
+</code></pre><hr></hr>
+<h2 id="3-儀表板改善提案流程">3. 儀表板改善提案流程</h2>
+<h3 id="建立改善提案機制">建立改善提案機制</h3>
+<p><strong>任何人都可以提出改善建議</strong></p>
+<p><strong>提案管道</strong>：</p>
+<ol>
+<li>儀表板內建「回饋」按鈕</li>
+<li>定期改善提案會議</li>
+<li>Email 至專責信箱</li>
+<li>線上表單</li>
+</ol>
+<h3 id="提案評估標準">提案評估標準</h3>
+<p><strong>評分矩陣</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>評分標準</th>
+<th>權重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>影響範圍</strong></td>
+<td>受益使用者數量</td>
+<td>30%</td>
+</tr>
+<tr>
+<td><strong>價值貢獻</strong></td>
+<td>對決策的幫助程度</td>
+<td>30%</td>
+</tr>
+<tr>
+<td><strong>實施難度</strong></td>
+<td>技術與資源需求</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>緊急程度</strong></td>
+<td>是否影響重要決策</td>
+<td>20%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>優先級分類</strong>：</p>
+<pre><code>P0（緊急）：
+- 資料錯誤
+- 系統故障
+- 影響重大決策
+
+P1（高優先級）：
+- 影響多數使用者
+- 價值貢獻大
+- 實施難度低
+
+P2（中優先級）：
+- 影響部分使用者
+- 有價值但非緊急
+- 實施難度中等
+
+P3（低優先級）：
+- Nice to have
+- 影響範圍小
+- 實施難度高
+</code></pre><h3 id="改善流程">改善流程</h3>
+<table>
+<thead>
+<tr>
+<th>步驟</th>
+<th>活動</th>
+<th>時效</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>提案提出</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>初步篩選</td>
+<td>1週內回覆</td>
+</tr>
+<tr>
+<td>3</td>
+<td>評估委員會審查</td>
+<td>每月一次</td>
+</tr>
+<tr>
+<td>4</td>
+<td>優先級排序</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>排入開發計劃</td>
+<td>-</td>
+</tr>
+<tr>
+<td>6</td>
+<td>開發與測試</td>
+<td>依複雜度</td>
+</tr>
+<tr>
+<td>7</td>
+<td>上線通知提案人</td>
+<td>-</td>
+</tr>
+<tr>
+<td>8</td>
+<td>追蹤成效</td>
+<td>持續追蹤</td>
+</tr>
+</tbody>
+</table>
+<h3 id="改善委員會">改善委員會</h3>
+<p><strong>組成</strong>：</p>
+<ul>
+<li>主席：IT 主管或 BI 負責人</li>
+<li>成員：各部門代表、KPI Owner、使用者代表</li>
+<li>頻率：每月一次</li>
+<li>時長：60 分鐘</li>
+</ul>
+<p><strong>會議議程</strong>：</p>
+<pre><code>1. 回顧上月改善項目進度（15分鐘）
+2. 評估本月新提案（30分鐘）
+3. 優先級討論與排序（10分鐘）
+4. 下月開發計劃確認（5分鐘）
+</code></pre><hr></hr>
+<h2 id="4-系統與決策同步演進">4. 系統與決策同步演進</h2>
+<h3 id="追蹤業務變化">追蹤業務變化</h3>
+<p><strong>觸發 KPI 檢討的事件</strong>：</p>
+<p>✅ <strong>組織變革</strong></p>
+<pre><code>範例：
+- 新設立事業部
+- 部門合併或拆分
+→ 需調整 KPI 架構與權限
+</code></pre><p>✅ <strong>策略調整</strong></p>
+<pre><code>範例：
+- 從成長導向改為獲利導向
+- 進入新市場
+→ 需調整目標值與新增 KPI
+</code></pre><p>✅ <strong>市場環境變化</strong></p>
+<pre><code>範例：
+- 經濟衰退
+- 競爭者加入
+→ 需調整目標與預警門檻
+</code></pre><p>✅ <strong>技術升級</strong></p>
+<pre><code>範例：
+- 導入新 ERP 系統
+- 新增資料來源
+→ 需調整資料串接與定義
+</code></pre><h3 id="版本演進規劃">版本演進規劃</h3>
+<p><strong>建立產品路線圖（Product Roadmap）</strong></p>
+<pre><code>2025 Q1-Q2：基礎版
+- 核心 KPI 上線
+- 基本篩選功能
+- 手機版支援
+
+2025 Q3-Q4：增強版
+- 進階分析功能
+- 自訂視圖
+- 預警通知
+- 資料匯出
+
+2026 H1：智能版
+- AI 異常偵測
+- 預測分析
+- 自然語言查詢
+- 自動化洞察
+
+2026 H2：協作版
+- 協作註解
+- 行動任務追蹤
+- 會議簡報生成
+</code></pre><hr></hr>
+<h2 id="5-持續改進的成功指標">5. 持續改進的成功指標</h2>
+<h3 id="追蹤以下指標">追蹤以下指標</h3>
+<p><strong>使用率指標</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>目標</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>活躍使用者率</td>
+<td>&gt; 80%</td>
+<td>每月至少登入一次的使用者比例</td>
+</tr>
+<tr>
+<td>每日活躍使用者</td>
+<td>&gt; 50%</td>
+<td>每日登入的使用者比例</td>
+</tr>
+<tr>
+<td>平均停留時間</td>
+<td>5-10 分鐘</td>
+<td>過短可能資訊不夠，過長可能難用</td>
+</tr>
+<tr>
+<td>回訪率</td>
+<td>&gt; 70%</td>
+<td>7 天內再次登入的比例</td>
+</tr>
+</tbody>
+</table>
+<p><strong>滿意度指標</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>目標</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整體滿意度</td>
+<td>&gt; 4.0/5</td>
+<td>使用者調查平均分數</td>
+</tr>
+<tr>
+<td>NPS</td>
+<td>&gt; 30</td>
+<td>淨推薦值</td>
+</tr>
+<tr>
+<td>問題回報數</td>
+<td>減少趨勢</td>
+<td>每月問題回報數量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>價值指標</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>目標</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>報表準備時間</td>
+<td>減少 80%</td>
+<td>相較於傳統報表</td>
+</tr>
+<tr>
+<td>決策時效性</td>
+<td>提升 50%</td>
+<td>從發現問題到決策的時間</td>
+</tr>
+<tr>
+<td>異常發現時間</td>
+<td>即時</td>
+<td>預警機制觸發時間</td>
+</tr>
+<tr>
+<td>資料查詢次數</td>
+<td>減少人工查詢</td>
+<td>減少 IT 部門的臨時查詢需求</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="6-經驗教訓與最佳實踐">6. 經驗教訓與最佳實踐</h2>
+<h3 id="常見陷阱">常見陷阱</h3>
+<p>❌ <strong>完美主義陷阱</strong></p>
+<pre><code>問題：想一次做到完美，遲遲不上線
+解決：採用 MVP 方式，快速上線、持續迭代
+</code></pre><p>❌ <strong>技術導向陷阱</strong></p>
+<pre><code>問題：過度關注技術功能，忽略使用者需求
+解決：使用者參與設計，以解決問題為導向
+</code></pre><p>❌ <strong>資訊過載陷阱</strong></p>
+<pre><code>問題：放入所有資料，使用者不知道看什麼
+解決：聚焦關鍵資訊，建立清晰層級
+</code></pre><p>❌ <strong>一次性專案陷阱</strong></p>
+<pre><code>問題：上線後無人維護，逐漸失去價值
+解決：建立持續運作與改善機制
+</code></pre><h3 id="成功關鍵">成功關鍵</h3>
+<p>✅ <strong>高層持續關注</strong></p>
+<ul>
+<li>CEO/總經理定期檢視</li>
+<li>納入重要會議議程</li>
+</ul>
+<p>✅ <strong>使用者參與</strong></p>
+<ul>
+<li>設計階段訪談需求</li>
+<li>試行階段收集回饋</li>
+<li>上線後持續改善</li>
+</ul>
+<p>✅ <strong>資料品質保證</strong></p>
+<ul>
+<li>明確責任人</li>
+<li>自動化驗證</li>
+<li>異常及時處理</li>
+</ul>
+<p>✅ <strong>持續溝通推廣</strong></p>
+<ul>
+<li>定期訓練</li>
+<li>成功案例分享</li>
+<li>內部宣傳</li>
+</ul>
+<hr></hr>
+<h2 id="持續改進檢查清單">持續改進檢查清單</h2>
+<h3 id="每季必做">每季必做</h3>
+<ul>
+<li>[ ] 檢討 KPI 是否仍符合策略</li>
+<li>[ ] 檢視使用率數據</li>
+<li>[ ] 評估目標值合理性</li>
+<li>[ ] 審查待改善項目進度</li>
+</ul>
+<h3 id="每半年必做">每半年必做</h3>
+<ul>
+<li>[ ] 進行使用者滿意度調查</li>
+<li>[ ] 分析調查結果並採取行動</li>
+<li>[ ] 檢討改善提案機制</li>
+<li>[ ] 更新產品路線圖</li>
+</ul>
+<h3 id="每年必做">每年必做</h3>
+<ul>
+<li>[ ] 全面檢討 KPI 架構</li>
+<li>[ ] 評估技術平台是否需升級</li>
+<li>[ ] 檢視資料治理機制</li>
+<li>[ ] 規劃下年度發展計劃</li>
+</ul>
+<hr></hr>
+<p><strong>上一章</strong>：<a href="08-implementation.html">導入步驟建議</a>
+<strong>下一章</strong>：<a href="10-appendix.html">附錄</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-implementation.html" class="navigation navigation-prev " aria-label="Previous page: 八、導入步驟建議">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-appendix.html" class="navigation navigation-next " aria-label="Next page: 十、附錄">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"九、持續改進與評估","level":"2.9","depth":1,"next":{"title":"十、附錄","level":"2.10","depth":1,"path":"docs/10-appendix.md","ref":"docs/10-appendix.md","articles":[]},"previous":{"title":"八、導入步驟建議","level":"2.8","depth":1,"path":"docs/08-implementation.md","ref":"docs/08-implementation.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"營運績效分析小組","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0","lastUpdate":"2025-11-01"},"title":"企業儀表板建立準則","language":"zh-tw","gitbook":"*","description":"全面的企業級儀表板設計、開發和實施指南"},"file":{"path":"docs/09-continuous-improvement.md","mtime":"2025-10-31T23:21:14.490Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-01T00:01:47.467Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,729 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>四、KPI 架構與指標設計 · 企業儀表板建立準則</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        <meta name="author" content="營運績效分析小組">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05-visualization.html" />
+    
+    
+    <link rel="prev" href="03-design-principles.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    簡介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心章節</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    一、前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-positioning.html">
+            
+                <a href="02-positioning.html">
+            
+                    
+                    二、儀表板的定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-design-principles.html">
+            
+                <a href="03-design-principles.html">
+            
+                    
+                    三、設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="04-kpi-framework.html">
+            
+                <a href="04-kpi-framework.html">
+            
+                    
+                    四、KPI 架構與指標設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-visualization.html">
+            
+                <a href="05-visualization.html">
+            
+                    
+                    五、視覺化設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-data-governance.html">
+            
+                <a href="06-data-governance.html">
+            
+                    
+                    六、資料治理與管理機制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-pdca.html">
+            
+                <a href="07-pdca.html">
+            
+                    
+                    七、運作機制（PDCA）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-implementation.html">
+            
+                <a href="08-implementation.html">
+            
+                    
+                    八、導入步驟建議
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-continuous-improvement.html">
+            
+                <a href="09-continuous-improvement.html">
+            
+                    
+                    九、持續改進與評估
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-appendix.html">
+            
+                <a href="10-appendix.html">
+            
+                    
+                    十、附錄
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >四、KPI 架構與指標設計</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="四、kpi-架構與指標設計">四、KPI 架構與指標設計</h1>
+<h2 id="1-kpi-分類依據-—-平衡計分卡（bsc）">1. KPI 分類依據 — 平衡計分卡（BSC）</h2>
+<p>平衡計分卡（Balanced Scorecard, BSC）是衡量企業績效的綜合框架，從四個面向檢視企業表現。</p>
+<h3 id="財務面向（financial-perspective）">財務面向（Financial Perspective）</h3>
+<p><strong>目的</strong>：反映企業整體成果</p>
+<p><strong>主要指標示例</strong>：</p>
+<ul>
+<li>營收成長率</li>
+<li>毛利率</li>
+<li>營業利益率</li>
+<li>ROIC（投入資本報酬率）</li>
+<li>ROE（股東權益報酬率）</li>
+<li>自由現金流</li>
+<li>EBITDA（稅息折舊及攤銷前利潤）</li>
+</ul>
+<p><strong>計算範例</strong>：</p>
+<pre><code>營收成長率 = (本期營收 - 上期營收) / 上期營收 × 100%
+
+毛利率 = (營收 - 銷貨成本) / 營收 × 100%
+
+ROIC = 稅後淨營業利益 / 投入資本 × 100%
+</code></pre><hr></hr>
+<h3 id="客戶面向（customer-perspective）">客戶面向（Customer Perspective）</h3>
+<p><strong>目的</strong>：監控市場與客戶健康度</p>
+<p><strong>主要指標示例</strong>：</p>
+<ul>
+<li>客戶別營收</li>
+<li>客戶貢獻度（Top 20% 客戶營收占比）</li>
+<li>客戶滿意度（CSAT）</li>
+<li>淨推薦值（NPS）</li>
+<li>客戶留存率</li>
+<li>客戶獲取成本（CAC）</li>
+<li>客戶生命週期價值（LTV）</li>
+</ul>
+<p><strong>計算範例</strong>：</p>
+<pre><code>客戶留存率 = (期末客戶數 - 新增客戶數) / 期初客戶數 × 100%
+
+NPS = 推薦者比例 - 批評者比例
+
+LTV = 平均客戶年收入 × 客戶關係年數 × 毛利率
+</code></pre><hr></hr>
+<h3 id="內部營運面向（internal-process-perspective）">內部營運面向（Internal Process Perspective）</h3>
+<p><strong>目的</strong>：改善效率與品質</p>
+<p><strong>主要指標示例</strong>：</p>
+<ul>
+<li>製造成本率</li>
+<li>良率</li>
+<li>交期達成率</li>
+<li>庫存周轉天數</li>
+<li>訂單處理時間</li>
+<li>產能利用率</li>
+<li>OEE（整體設備效率）</li>
+</ul>
+<p><strong>計算範例</strong>：</p>
+<pre><code>良率 = 合格品數量 / 總生產數量 × 100%
+
+庫存周轉天數 = 平均庫存金額 / (年度銷貨成本 / 365)
+
+OEE = 可用率 × 表現率 × 品質率
+</code></pre><hr></hr>
+<h3 id="學習成長面向（learning--growth-perspective）">學習成長面向（Learning &amp; Growth Perspective）</h3>
+<p><strong>目的</strong>：強化組織能力基礎</p>
+<p><strong>主要指標示例</strong>：</p>
+<ul>
+<li>研發進度達成率</li>
+<li>人均產出</li>
+<li>員工訓練時數</li>
+<li>員工滿意度</li>
+<li>關鍵人才留任率</li>
+<li>新產品營收佔比</li>
+</ul>
+<p><strong>計算範例</strong>：</p>
+<pre><code>人均產出 = 總營收 / 員工總數
+
+新產品營收佔比 = 新產品營收 / 總營收 × 100%
+</code></pre><hr></hr>
+<h2 id="2-kpi-層級設計">2. KPI 層級設計</h2>
+<p>建立金字塔式的 KPI 架構，由上而下展開，確保策略與執行的對齊。</p>
+<h3 id="level-1：公司總體-kpi">Level 1：公司總體 KPI</h3>
+<p><strong>對象</strong>：CEO、董事會</p>
+<p><strong>更新頻率</strong>：月/季</p>
+<p><strong>核心指標</strong>：</p>
+<ul>
+<li>營收</li>
+<li>EBIT（稅息前利潤）</li>
+<li>ROIC</li>
+<li>自由現金流</li>
+<li>市場佔有率</li>
+</ul>
+<p><strong>範例儀表板</strong>：</p>
+<pre><code>┌─────────────────────────────────────────┐
+│  2025 Q1 公司績效總覽                   │
+├───────────┬───────────┬─────────────────┤
+│ 營收      │ EBIT      │ ROIC            │
+│ $50.2M    │ $8.5M     │ 18.5%           │
+│ ⬆ +12%    │ ⬆ +15%    │ ⬆ +2.3pp        │
+└───────────┴───────────┴─────────────────┘
+</code></pre><hr></hr>
+<h3 id="level-2：事業群／產品線-kpi">Level 2：事業群／產品線 KPI</h3>
+<p><strong>對象</strong>：事業部總經理、產品線經理</p>
+<p><strong>更新頻率</strong>：週/月</p>
+<p><strong>核心指標</strong>：</p>
+<ul>
+<li>事業部營收</li>
+<li>毛利率</li>
+<li>銷售貢獻度</li>
+<li>產品組合比例</li>
+<li>新客戶數</li>
+</ul>
+<p><strong>範例 KPI 樹</strong>：</p>
+<pre><code>公司營收 $50M
+├─ 事業部 A: $30M (60%)
+│  ├─ 產品線 A1: $18M
+│  └─ 產品線 A2: $12M
+├─ 事業部 B: $15M (30%)
+└─ 事業部 C: $5M (10%)
+</code></pre><hr></hr>
+<h3 id="level-3：營運-kpi">Level 3：營運 KPI</h3>
+<p><strong>對象</strong>：部門主管（生產、銷售、物流）</p>
+<p><strong>更新頻率</strong>：日/週</p>
+<p><strong>核心指標</strong>：</p>
+<ul>
+<li>產能利用率</li>
+<li>訂單達交率</li>
+<li>製造成本</li>
+<li>庫存水位</li>
+<li>區域銷售額</li>
+</ul>
+<p><strong>範例</strong>：</p>
+<pre><code>生產部門 KPI：
+- 今日產量: 1,245 件 / 目標 1,200 件 ✅
+- 良率: 98.5% / 目標 98% ✅
+- 設備稼動率: 92.1% / 目標 90% ✅
+- 停機時間: 45 分鐘 / 預算 60 分鐘 ✅
+</code></pre><hr></hr>
+<h3 id="level-4：改善-kpi">Level 4：改善 KPI</h3>
+<p><strong>對象</strong>：專案經理、改善小組</p>
+<p><strong>更新頻率</strong>：即時/日</p>
+<p><strong>核心指標</strong>：</p>
+<ul>
+<li>效率改善幅度</li>
+<li>異常率</li>
+<li>專案進度</li>
+<li>不良品數</li>
+<li>客訴件數</li>
+</ul>
+<p><strong>範例專案追蹤</strong>：</p>
+<pre><code>良率改善專案：
+目標: 從 96% 提升至 98%
+當前: 97.2%
+進度: 60% (3個月進行中)
+預計完成: 2個月後
+</code></pre><hr></hr>
+<h2 id="3-kpi-設計最佳實踐">3. KPI 設計最佳實踐</h2>
+<h3 id="smart-原則">SMART 原則</h3>
+<p>所有 KPI 應符合 SMART 標準：</p>
+<ul>
+<li><strong>S</strong>pecific（具體的）：明確定義，無模糊空間</li>
+<li><strong>M</strong>easurable（可衡量的）：可量化，有明確數值</li>
+<li><strong>A</strong>chievable（可達成的）：具挑戰但可實現</li>
+<li><strong>R</strong>elevant（相關的）：與業務目標直接相關</li>
+<li><strong>T</strong>ime-bound（有時限的）：設定明確時間範圍</li>
+</ul>
+<h3 id="kpi-選擇指引">KPI 選擇指引</h3>
+<p>✅ <strong>優先選擇</strong>：</p>
+<ul>
+<li>能驅動行動的指標</li>
+<li>反映關鍵業務成果</li>
+<li>可控制或可影響的指標</li>
+<li>資料取得容易且準確</li>
+</ul>
+<p>❌ <strong>避免使用</strong>：</p>
+<ul>
+<li>虛榮指標（看起來好但無實質意義）</li>
+<li>無法行動的指標</li>
+<li>資料取得困難或不準確</li>
+<li>過於複雜的複合指標</li>
+</ul>
+<h3 id="領先指標-vs-落後指標">領先指標 vs 落後指標</h3>
+<p><strong>領先指標（Leading Indicators）</strong>：</p>
+<ul>
+<li>預測未來表現</li>
+<li>可即時影響</li>
+<li>範例：拜訪客戶數、報價數、新產品開發進度</li>
+</ul>
+<p><strong>落後指標（Lagging Indicators）</strong>：</p>
+<ul>
+<li>反映過去成果</li>
+<li>事後檢討</li>
+<li>範例：月營收、淨利、市佔率</li>
+</ul>
+<p><strong>建議配置</strong>：70% 落後指標 + 30% 領先指標</p>
+<hr></hr>
+<h2 id="4-kpi-定義文件（kpi-definition-sheet）">4. KPI 定義文件（KPI Definition Sheet）</h2>
+<p>每個 KPI 都應有完整的定義文件，範例如下：</p>
+<h3 id="kpi-定義範本">KPI 定義範本</h3>
+<table>
+<thead>
+<tr>
+<th>欄位</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KPI 編號</strong></td>
+<td>KPI-FIN-001</td>
+</tr>
+<tr>
+<td><strong>KPI 名稱</strong></td>
+<td>月營收</td>
+</tr>
+<tr>
+<td><strong>英文名稱</strong></td>
+<td>Monthly Revenue</td>
+</tr>
+<tr>
+<td><strong>定義</strong></td>
+<td>當月已確認訂單的總銷售額（未稅）</td>
+</tr>
+<tr>
+<td><strong>計算公式</strong></td>
+<td>SUM(訂單金額) WHERE 訂單狀態='已確認' AND 訂單日期 BETWEEN 月初 AND 月底</td>
+</tr>
+<tr>
+<td><strong>單位</strong></td>
+<td>新台幣（元）</td>
+</tr>
+<tr>
+<td><strong>資料來源</strong></td>
+<td>ERP 系統 - 銷售模組（SAP SD）</td>
+</tr>
+<tr>
+<td><strong>更新頻率</strong></td>
+<td>每日 23:00 自動更新</td>
+</tr>
+<tr>
+<td><strong>責任人</strong></td>
+<td>財務部 - 王經理（分機 1234）</td>
+</tr>
+<tr>
+<td><strong>目標值</strong></td>
+<td>$10,000,000 / 月</td>
+</tr>
+<tr>
+<td><strong>預警門檻</strong></td>
+<td>綠燈: ≥$10M｜黃燈: $9M-$10M｜紅燈: &lt;$9M</td>
+</tr>
+<tr>
+<td><strong>使用儀表板</strong></td>
+<td>策略儀表板、營運儀表板</td>
+</tr>
+<tr>
+<td><strong>版本</strong></td>
+<td>v1.2</td>
+</tr>
+<tr>
+<td><strong>最後更新</strong></td>
+<td>2025-01-01</td>
+</tr>
+<tr>
+<td><strong>變更歷史</strong></td>
+<td>v1.2 (2025-01-01): 調整為未稅金額<br></br>v1.1 (2024-12-01): 新增預警門檻</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="5-kpi-數量建議">5. KPI 數量建議</h2>
+<table>
+<thead>
+<tr>
+<th>層級</th>
+<th>建議 KPI 數量</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司層</td>
+<td>5-7 個</td>
+<td>聚焦最關鍵的財務與策略指標</td>
+</tr>
+<tr>
+<td>事業部層</td>
+<td>7-10 個</td>
+<td>包含財務、客戶、營運指標</td>
+</tr>
+<tr>
+<td>部門層</td>
+<td>10-15 個</td>
+<td>細化到具體執行指標</td>
+</tr>
+<tr>
+<td>個人層</td>
+<td>3-5 個</td>
+<td>與個人績效直接相關</td>
+</tr>
+</tbody>
+</table>
+<p><strong>重要提醒</strong>：</p>
+<blockquote>
+<p>「與其追蹤 50 個指標卻沒有行動，不如聚焦 5 個關鍵指標並持續改善。」</p>
+</blockquote>
+<hr></hr>
+<h2 id="6-kpi-審查與更新機制">6. KPI 審查與更新機制</h2>
+<h3 id="定期審查">定期審查</h3>
+<ul>
+<li><strong>每季</strong>：檢視 KPI 是否仍符合策略目標</li>
+<li><strong>每半年</strong>：評估 KPI 的有效性與使用率</li>
+<li><strong>每年</strong>：配合年度策略調整 KPI 架構</li>
+</ul>
+<h3 id="更新流程">更新流程</h3>
+<pre><code>發現需求 → 提案 → 評審委員會審核 → 定義文件更新 → 系統實施 → 使用者溝通 → 上線
+</code></pre><h3 id="退役-kpi">退役 KPI</h3>
+<p>當 KPI 不再有價值時，應主動移除：</p>
+<ul>
+<li>目標已達成且無需持續追蹤</li>
+<li>業務重點轉移</li>
+<li>資料品質無法保證</li>
+<li>無人使用或採取行動</li>
+</ul>
+<hr></hr>
+<p><strong>上一章</strong>：<a href="03-design-principles.html">設計原則</a>
+<strong>下一章</strong>：<a href="05-visualization.html">視覺化設計原則</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03-design-principles.html" class="navigation navigation-prev " aria-label="Previous page: 三、設計原則">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05-visualization.html" class="navigation navigation-next " aria-label="Next page: 五、視覺化設計原則">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"四、KPI 架構與指標設計","level":"2.4","depth":1,"next":{"title":"五、視覺化設計原則","level":"2.5","depth":1,"path":"docs/05-visualization.md","ref":"docs/05-visualization.md","articles":[]},"previous":{"title":"三、設計原則","level":"2.3","depth":1,"path":"docs/03-design-principles.md","ref":"docs/03-design-principles.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"營運績效分析小組","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0","lastUpdate":"2025-11-01"},"title":"企業儀表板建立準則","language":"zh-tw","gitbook":"*","description":"全面的企業級儀表板設計、開發和實施指南"},"file":{"path":"docs/04-kpi-framework.md","mtime":"2025-10-31T23:05:04.282Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-01T00:01:47.467Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

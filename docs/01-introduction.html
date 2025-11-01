@@ -1,0 +1,435 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>一、前言 · 企業儀表板建立準則</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        <meta name="author" content="營運績效分析小組">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-positioning.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    簡介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心章節</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    一、前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-positioning.html">
+            
+                <a href="02-positioning.html">
+            
+                    
+                    二、儀表板的定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-design-principles.html">
+            
+                <a href="03-design-principles.html">
+            
+                    
+                    三、設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-kpi-framework.html">
+            
+                <a href="04-kpi-framework.html">
+            
+                    
+                    四、KPI 架構與指標設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-visualization.html">
+            
+                <a href="05-visualization.html">
+            
+                    
+                    五、視覺化設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-data-governance.html">
+            
+                <a href="06-data-governance.html">
+            
+                    
+                    六、資料治理與管理機制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="07-pdca.html">
+            
+                <a href="07-pdca.html">
+            
+                    
+                    七、運作機制（PDCA）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-implementation.html">
+            
+                <a href="08-implementation.html">
+            
+                    
+                    八、導入步驟建議
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-continuous-improvement.html">
+            
+                <a href="09-continuous-improvement.html">
+            
+                    
+                    九、持續改進與評估
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-appendix.html">
+            
+                <a href="10-appendix.html">
+            
+                    
+                    十、附錄
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >一、前言</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="一、前言">一、前言</h1>
+<p>在數據驅動決策（Data-Driven Decision Making）已成為企業核心競爭力的時代，儀表板（Dashboard）不僅是報表的視覺化呈現，更是策略執行、營運監控與績效改善的中樞工具。</p>
+<p>為確保全公司對營運指標的理解一致、資料來源單一且具決策導向，本文件旨在建立企業儀表板的設計與管理原則，協助各層級主管快速掌握經營現況，促進決策效率與組織對齊。</p>
+<h2 id="手冊目的">手冊目的</h2>
+<p>本手冊提供：</p>
+<ol>
+<li><strong>統一標準</strong>：建立全公司一致的儀表板設計語言</li>
+<li><strong>設計指引</strong>：提供 KPI 選擇、視覺化、互動設計的最佳實踐</li>
+<li><strong>管理機制</strong>：定義資料治理、權限控管、持續改進流程</li>
+<li><strong>導入方法</strong>：提供從規劃到上線的完整步驟</li>
+</ol>
+<h2 id="適用範圍">適用範圍</h2>
+<p>本原則適用於：</p>
+<ul>
+<li>策略儀表板（高階管理層）</li>
+<li>營運儀表板（部門主管）</li>
+<li>分析儀表板（分析人員）</li>
+<li>專案儀表板（專案經理）</li>
+</ul>
+<h2 id="預期效益">預期效益</h2>
+<p>實施本原則後，預期達成：</p>
+<ul>
+<li>✅ 減少 80% 報表準備時間</li>
+<li>✅ 提升決策時效性（從天縮短至分鐘）</li>
+<li>✅ 建立單一資料來源（Single Source of Truth）</li>
+<li>✅ 增強組織對齊與透明度</li>
+<li>✅ 實現即時異常預警</li>
+</ul>
+<hr></hr>
+<p><strong>下一章</strong>：<a href="02-positioning.html">儀表板的定位</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 簡介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-positioning.html" class="navigation navigation-next " aria-label="Next page: 二、儀表板的定位">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一、前言","level":"2.1","depth":1,"next":{"title":"二、儀表板的定位","level":"2.2","depth":1,"path":"docs/02-positioning.md","ref":"docs/02-positioning.md","articles":[]},"previous":{"title":"簡介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"營運績效分析小組","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0","lastUpdate":"2025-11-01"},"title":"企業儀表板建立準則","language":"zh-tw","gitbook":"*","description":"全面的企業級儀表板設計、開發和實施指南"},"file":{"path":"docs/01-introduction.md","mtime":"2025-10-31T23:02:59.065Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-01T00:01:47.467Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

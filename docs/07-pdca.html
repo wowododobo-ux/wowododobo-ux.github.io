@@ -1,0 +1,854 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <head>
+        <meta charset="UTF-8">
+        <title>七、運作機制（PDCA） · 企業儀表板建立準則</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        <meta name="author" content="營運績效分析小組">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="08-implementation.html" />
+    
+    
+    <link rel="prev" href="06-data-governance.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    簡介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心章節</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    一、前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02-positioning.html">
+            
+                <a href="02-positioning.html">
+            
+                    
+                    二、儀表板的定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03-design-principles.html">
+            
+                <a href="03-design-principles.html">
+            
+                    
+                    三、設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="04-kpi-framework.html">
+            
+                <a href="04-kpi-framework.html">
+            
+                    
+                    四、KPI 架構與指標設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="05-visualization.html">
+            
+                <a href="05-visualization.html">
+            
+                    
+                    五、視覺化設計原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="06-data-governance.html">
+            
+                <a href="06-data-governance.html">
+            
+                    
+                    六、資料治理與管理機制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="07-pdca.html">
+            
+                <a href="07-pdca.html">
+            
+                    
+                    七、運作機制（PDCA）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="08-implementation.html">
+            
+                <a href="08-implementation.html">
+            
+                    
+                    八、導入步驟建議
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="09-continuous-improvement.html">
+            
+                <a href="09-continuous-improvement.html">
+            
+                    
+                    九、持續改進與評估
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="10-appendix.html">
+            
+                <a href="10-appendix.html">
+            
+                    
+                    十、附錄
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >七、運作機制（PDCA）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="七、運作機制（pdca）">七、運作機制（PDCA）</h1>
+<p>儀表板不是一次性專案，而是持續改進的管理工具。運用 PDCA 循環確保儀表板持續創造價值。</p>
+<h2 id="pdca-循環概念">PDCA 循環概念</h2>
+<table>
+<thead>
+<tr>
+<th>階段</th>
+<th>活動內容</th>
+<th>下一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plan</strong><br></br>（計劃）</td>
+<td>設定目標與 KPI</td>
+<td>→ Do</td>
+</tr>
+<tr>
+<td><strong>Do</strong><br></br>（執行）</td>
+<td>執行與資料收集</td>
+<td>→ Check</td>
+</tr>
+<tr>
+<td><strong>Check</strong><br></br>（檢查）</td>
+<td>檢視與分析</td>
+<td>→ Act</td>
+</tr>
+<tr>
+<td><strong>Act</strong><br></br>（行動）</td>
+<td>改善與修正</td>
+<td>→ Plan（持續循環）</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="plan（計劃）">Plan（計劃）</h2>
+<h3 id="目的">目的</h3>
+<p>設定策略目標與 KPI，制定衡量標準。</p>
+<h3 id="主要活動">主要活動</h3>
+<p><strong>1. 設定年度策略目標</strong></p>
+<table>
+<thead>
+<tr>
+<th>策略面向</th>
+<th>目標</th>
+<th>衡量指標</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>成長</td>
+<td>營收成長 20%</td>
+<td>年營收</td>
+</tr>
+<tr>
+<td>獲利</td>
+<td>提升毛利率至 35%</td>
+<td>毛利率</td>
+</tr>
+<tr>
+<td>效率</td>
+<td>降低營運成本 10%</td>
+<td>營運成本率</td>
+</tr>
+<tr>
+<td>客戶</td>
+<td>提升客戶滿意度</td>
+<td>NPS ≥ 50</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. 建構 KPI 樹</strong></p>
+<pre><code>公司目標：營收成長20%
+├─ 策略1：新客戶開發
+│  ├─ KPI: 新客戶數 +50
+│  ├─ KPI: 新客戶營收 $5M
+│  └─ 行動：增加業務人員、市場推廣
+├─ 策略2：既有客戶深耕
+│  ├─ KPI: 客單價 +15%
+│  ├─ KPI: 交叉銷售率 +10%
+│  └─ 行動：產品組合優化、客戶關係管理
+└─ 策略3：新產品推出
+   ├─ KPI: 新產品營收佔比 15%
+   └─ 行動：研發投入、上市推廣
+</code></pre><p><strong>3. 設定目標值與預警門檻</strong></p>
+<table>
+<thead>
+<tr>
+<th>KPI</th>
+<th>2025年目標</th>
+<th>Q1目標</th>
+<th>綠燈</th>
+<th>黃燈</th>
+<th>紅燈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>月營收</td>
+<td>$120M</td>
+<td>$28M</td>
+<td>≥$10M</td>
+<td>$9M-$10M</td>
+<td>&lt;$9M</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>35%</td>
+<td>34%</td>
+<td>≥34%</td>
+<td>32-34%</td>
+<td>&lt;32%</td>
+</tr>
+<tr>
+<td>新客戶數</td>
+<td>50</td>
+<td>12</td>
+<td>≥12</td>
+<td>10-11</td>
+<td>&lt;10</td>
+</tr>
+</tbody>
+</table>
+<h3 id="產出文件">產出文件</h3>
+<p>✅ KPI 定義表
+✅ KPI 樹狀圖
+✅ 年度/季度目標設定表
+✅ 儀表板設計規格</p>
+<hr></hr>
+<h2 id="do（執行）">Do（執行）</h2>
+<h3 id="目的">目的</h3>
+<p>執行計劃並收集資料，確保資料準確與即時。</p>
+<h3 id="主要活動">主要活動</h3>
+<p><strong>1. 系統建置與整合</strong></p>
+<pre><code>資料來源整合
+├─ ERP 系統（訂單、財務）
+├─ CRM 系統（客戶資料）
+├─ 生產系統（產能、良率）
+└─ HR 系統（人力資源）
+       ↓
+   ETL 流程
+       ↓
+  資料倉儲（Data Warehouse）
+       ↓
+   BI 工具
+       ↓
+  儀表板發佈
+</code></pre><p><strong>2. 自動化資料更新</strong></p>
+<p><strong>每日自動執行</strong>：</p>
+<pre><code>23:00 - 從 ERP 提取當日訂單資料
+23:15 - 資料驗證與清理
+23:30 - 更新資料倉儲
+23:45 - 重新計算 KPI
+00:00 - 發佈更新後儀表板
+00:05 - 執行異常檢查
+00:10 - 發送預警通知（如有需要）
+</code></pre><p><strong>3. 人工作業記錄</strong></p>
+<p><strong>需要人工處理的項目</strong>：</p>
+<ul>
+<li>客戶滿意度調查結果輸入</li>
+<li>專案進度更新</li>
+<li>異常事件說明</li>
+<li>改善行動記錄</li>
+</ul>
+<h3 id="產出資料">產出資料</h3>
+<p>✅ 系統紀錄（訂單、生產、客戶資料）
+✅ 每日/每週/每月報表
+✅ 更新的儀表板
+✅ 資料品質檢查報告</p>
+<hr></hr>
+<h2 id="check（檢查）">Check（檢查）</h2>
+<h3 id="目的">目的</h3>
+<p>檢視儀表板、分析績效、識別異常。</p>
+<h3 id="主要活動">主要活動</h3>
+<p><strong>1. 定期檢視會議</strong></p>
+<p><strong>日會（Daily Stand-up）</strong>：</p>
+<ul>
+<li>時間：每日上午 9:00，15 分鐘</li>
+<li>對象：營運團隊</li>
+<li>檢視：營運儀表板</li>
+<li>重點：<ul>
+<li>昨日達成狀況</li>
+<li>今日預警項目</li>
+<li>需要協助的問題</li>
+</ul>
+</li>
+</ul>
+<p><strong>週會（Weekly Review）</strong>：</p>
+<ul>
+<li>時間：每週一上午 10:00，60 分鐘</li>
+<li>對象：部門主管</li>
+<li>檢視：營運儀表板 + 分析儀表板</li>
+<li>重點：<ul>
+<li>上週 KPI 達成率</li>
+<li>未達標項目根因分析</li>
+<li>本週行動計劃</li>
+</ul>
+</li>
+</ul>
+<p><strong>月會（Monthly Business Review）</strong>：</p>
+<ul>
+<li>時間：每月第一個週五，120 分鐘</li>
+<li>對象：高階主管</li>
+<li>檢視：策略儀表板</li>
+<li>重點：<ul>
+<li>月度/季度目標達成</li>
+<li>趨勢分析與預測</li>
+<li>策略調整建議</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 異常分析</strong></p>
+<p><strong>發現異常</strong>：</p>
+<pre><code>月營收: $8.2M（目標 $10M，達成率 82%）🔴
+
+異常報告：
+┌──────────────────────────────┐
+│ 根因分析（5 Why）            │
+│                              │
+│ 為何營收未達標？             │
+│ → 北區業績大幅下滑           │
+│                              │
+│ 為何北區下滑？               │
+│ → 大客戶A訂單延遲            │
+│                              │
+│ 為何訂單延遲？               │
+│ → 客戶預算審核流程卡關       │
+│                              │
+│ 為何審核卡關？               │
+│ → 客戶內部組織調整           │
+│                              │
+│ 為何沒有提前預警？           │
+│ → 業務未即時回報             │
+└──────────────────────────────┘
+
+建議行動：
+1. 加強與客戶A溝通，掌握審核進度
+2. 尋找替代訂單補足缺口
+3. 建立「大客戶訂單追蹤」機制
+4. 強化業務即時回報制度
+</code></pre><p><strong>3. 趨勢預測</strong></p>
+<p><strong>使用移動平均預測</strong>：</p>
+<pre><code>過去6個月營收：$9M, $9.5M, $10M, $9.8M, $10.2M, $10.5M
+移動平均：$9.83M
+趨勢：上升（斜率 +0.24M/月）
+預測Q2月均營收：~$10.8M
+</code></pre><h3 id="產出文件">產出文件</h3>
+<p>✅ 異常報告（含根因分析）
+✅ 週/月檢討報告
+✅ 預警清單
+✅ 趨勢分析報告</p>
+<hr></hr>
+<h2 id="act（行動）">Act（行動）</h2>
+<h3 id="目的">目的</h3>
+<p>問題改善與策略修正，確保目標達成。</p>
+<h3 id="主要活動">主要活動</h3>
+<p><strong>1. 改善行動</strong></p>
+<p><strong>未達標處理流程</strong>：</p>
+<pre><code>發現未達標
+    ↓
+根因分析
+    ↓
+提出改善方案
+    ↓
+責任人分派
+    ↓
+設定完成期限
+    ↓
+執行追蹤
+    ↓
+驗證成效
+</code></pre><p><strong>改善行動範例</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>問題</th>
+<th>根因</th>
+<th>改善方案</th>
+<th>責任人</th>
+<th>期限</th>
+<th>狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>北區營收未達標</td>
+<td>大客戶A訂單延遲</td>
+<td>1. 強化客戶溝通<br></br>2. 尋找替代訂單</td>
+<td>張區域經理</td>
+<td>2025-01-31</td>
+<td>進行中</td>
+</tr>
+<tr>
+<td>良率下降</td>
+<td>原料品質不穩</td>
+<td>1. 更換供應商<br></br>2. 加強進料檢驗</td>
+<td>李生產經理</td>
+<td>2025-02-15</td>
+<td>規劃中</td>
+</tr>
+<tr>
+<td>交期延遲</td>
+<td>產能不足</td>
+<td>1. 增加夜班<br></br>2. 外包部分產能</td>
+<td>劉營運經理</td>
+<td>2025-01-20</td>
+<td>已完成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. KPI 調整</strong></p>
+<p><strong>何時調整 KPI？</strong></p>
+<p>✅ <strong>需要調整的情況</strong>：</p>
+<ul>
+<li>策略方向改變</li>
+<li>市場環境重大變化</li>
+<li>KPI 過於容易或困難達成</li>
+<li>發現更好的衡量方式</li>
+</ul>
+<p>❌ <strong>不應調整的情況</strong>：</p>
+<ul>
+<li>僅因為未達標就降低目標</li>
+<li>頻繁變動造成無法比較</li>
+<li>未經充分討論與溝通</li>
+</ul>
+<p><strong>KPI 調整範例</strong>：</p>
+<pre><code>原KPI：新客戶數（絕對值）
+問題：無法反映客戶品質
+
+新KPI：高價值新客戶數（年採購潛力 &gt;$100K）
+理由：聚焦於有價值的客戶開發
+</code></pre><p><strong>3. 策略修正</strong></p>
+<p><strong>季度策略檢討</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>原策略</th>
+<th>執行狀況</th>
+<th>調整方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新客戶開發</td>
+<td>進度正常</td>
+<td>維持不變</td>
+</tr>
+<tr>
+<td>既有客戶深耕</td>
+<td>成效不如預期</td>
+<td>調整為「重點客戶深耕」，聚焦前 20% 客戶</td>
+</tr>
+<tr>
+<td>新產品推出</td>
+<td>超出預期</td>
+<td>加大資源投入，提前下階段產品研發</td>
+</tr>
+</tbody>
+</table>
+<h3 id="產出文件">產出文件</h3>
+<p>✅ 行動方案清單
+✅ KPI 更新紀錄
+✅ 策略調整報告
+✅ 下期計劃</p>
+<hr></hr>
+<h2 id="pdca-實踐案例">PDCA 實踐案例</h2>
+<h3 id="案例：毛利率改善專案">案例：毛利率改善專案</h3>
+<p><strong>Plan（1月）</strong>：</p>
+<ul>
+<li>目標：毛利率從 30% 提升至 35%</li>
+<li>策略：成本降低 + 產品組合優化</li>
+<li>KPI：毛利率（月追蹤）</li>
+</ul>
+<p><strong>Do（2-3月）</strong>：</p>
+<ul>
+<li>執行：<ol>
+<li>與供應商談判降低原料成本 5%</li>
+<li>推廣高毛利產品銷售</li>
+<li>淘汰低毛利產品線</li>
+</ol>
+</li>
+<li>資料收集：每日更新毛利率數據</li>
+</ul>
+<p><strong>Check（4月）</strong>：</p>
+<ul>
+<li>成果：毛利率提升至 33.5%（未達 35% 目標）</li>
+<li>分析：<ul>
+<li>✅ 原料成本確實降低 5%</li>
+<li>✅ 高毛利產品銷售成長 20%</li>
+<li>❌ 低毛利產品仍佔銷售 40%（淘汰進度落後）</li>
+</ul>
+</li>
+</ul>
+<p><strong>Act（5月）</strong>：</p>
+<ul>
+<li>改善行動：<ol>
+<li>加速低毛利產品淘汰</li>
+<li>業務獎金與毛利率連結</li>
+<li>提升目標至 Q3 達成 35%</li>
+</ol>
+</li>
+<li>調整 KPI：<ul>
+<li>新增「高毛利產品銷售佔比」追蹤</li>
+</ul>
+</li>
+</ul>
+<hr></hr>
+<h2 id="pdca-成功關鍵">PDCA 成功關鍵</h2>
+<h3 id="1-高階支持">1. 高階支持</h3>
+<ul>
+<li>CEO/總經理定期檢視儀表板</li>
+<li>將儀表板納入管理會議議程</li>
+<li>資源支持改善行動</li>
+</ul>
+<h3 id="2-全員參與">2. 全員參與</h3>
+<ul>
+<li>KPI Owner 負起責任</li>
+<li>使用者積極提供回饋</li>
+<li>跨部門協作改善</li>
+</ul>
+<h3 id="3-數據驅動">3. 數據驅動</h3>
+<ul>
+<li>基於事實而非主觀判斷</li>
+<li>量化改善成效</li>
+<li>持續追蹤趨勢</li>
+</ul>
+<h3 id="4-持續迭代">4. 持續迭代</h3>
+<ul>
+<li>不追求一次完美</li>
+<li>快速試錯、快速調整</li>
+<li>每個循環都有具體改進</li>
+</ul>
+<hr></hr>
+<h2 id="pdca-檢查清單">PDCA 檢查清單</h2>
+<ul>
+<li>[ ] 每年設定明確的策略目標與 KPI</li>
+<li>[ ] 建立定期檢視會議機制（日/週/月）</li>
+<li>[ ] 對未達標項目進行根因分析</li>
+<li>[ ] 制定具體的改善行動計劃</li>
+<li>[ ] 指派責任人與完成期限</li>
+<li>[ ] 追蹤改善行動執行狀況</li>
+<li>[ ] 驗證改善成效</li>
+<li>[ ] 定期檢討 KPI 的合理性</li>
+<li>[ ] 根據策略調整修正 KPI</li>
+<li>[ ] 記錄 PDCA 過程與學習</li>
+</ul>
+<hr></hr>
+<p><strong>上一章</strong>：<a href="06-data-governance.html">資料治理與管理機制</a>
+<strong>下一章</strong>：<a href="08-implementation.html">導入步驟建議</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06-data-governance.html" class="navigation navigation-prev " aria-label="Previous page: 六、資料治理與管理機制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="08-implementation.html" class="navigation navigation-next " aria-label="Next page: 八、導入步驟建議">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"七、運作機制（PDCA）","level":"2.7","depth":1,"next":{"title":"八、導入步驟建議","level":"2.8","depth":1,"path":"docs/08-implementation.md","ref":"docs/08-implementation.md","articles":[]},"previous":{"title":"六、資料治理與管理機制","level":"2.6","depth":1,"path":"docs/06-data-governance.md","ref":"docs/06-data-governance.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"營運績效分析小組","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0","lastUpdate":"2025-11-01"},"title":"企業儀表板建立準則","language":"zh-tw","gitbook":"*","description":"全面的企業級儀表板設計、開發和實施指南"},"file":{"path":"docs/07-pdca.md","mtime":"2025-10-31T23:20:50.758Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-01T00:01:47.467Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
