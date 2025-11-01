@@ -336,5 +336,5 @@ OEE = 可用率 × 表現率 × 品質率
 感謝您閱讀《企業儀表板建立原則》白皮書。
 
 如有任何問題或建議，請聯繫：
-- Email: bi-team@company.com
+- Email: hunsonchen@hunson.site
 - 內部分機: 1234（BI團隊）
