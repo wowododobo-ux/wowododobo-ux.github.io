@@ -33,6 +33,8 @@
 
     
         
+        <link rel="stylesheet" href="../styles/website.css">
+        
     
         
     
@@ -462,7 +464,736 @@
 
 註：★ 表示關鍵 KPI（重點追蹤項目）
 </code></pre><hr></hr>
-<h2 id="附錄-c：視覺化元件設計規範">附錄 C：視覺化元件設計規範</h2>
+<h2 id="附錄-c：各部門-kpi-範例">附錄 C：各部門 KPI 範例</h2>
+<p>以下提供製造業常見部門的關鍵績效指標範例，供各部門建立儀表板時參考。</p>
+<h3 id="1-財務部（finance）">1. 財務部（Finance）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>營收成長率</td>
+<td>(本期營收 - 去年同期) / 去年同期 × 100%</td>
+<td>≥ 15%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>(營收 - 銷貨成本) / 營收 × 100%</td>
+<td>≥ 35%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>營業利益率</td>
+<td>營業利益 / 營收 × 100%</td>
+<td>≥ 12%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>ROIC（投入資本報酬率）</td>
+<td>稅後淨營業利益 / 投入資本 × 100%</td>
+<td>≥ 15%</td>
+<td>季</td>
+</tr>
+<tr>
+<td>應收帳款周轉天數</td>
+<td>平均應收帳款 / (年度營收 / 365)</td>
+<td>≤ 45 天</td>
+<td>月</td>
+</tr>
+<tr>
+<td>現金流量</td>
+<td>營運現金流入 - 現金流出</td>
+<td>&gt; 0</td>
+<td>月</td>
+</tr>
+<tr>
+<td>預算達成率</td>
+<td>實際支出 / 預算 × 100%</td>
+<td>95-105%</td>
+<td>月</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-業務部（sales）">2. 業務部（Sales）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>月營收達成率</td>
+<td>實際營收 / 目標營收 × 100%</td>
+<td>≥ 100%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>新客戶數</td>
+<td>本月新增客戶數</td>
+<td>≥ 10 家/月</td>
+<td>月</td>
+</tr>
+<tr>
+<td>客戶留存率</td>
+<td>(期末客戶數 - 新增客戶數) / 期初客戶數 × 100%</td>
+<td>≥ 90%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>平均訂單金額</td>
+<td>總營收 / 訂單數</td>
+<td>≥ $50K</td>
+<td>月</td>
+</tr>
+<tr>
+<td>報價轉換率</td>
+<td>成交訂單數 / 報價數 × 100%</td>
+<td>≥ 30%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>業務人員人均產值</td>
+<td>總營收 / 業務人員數</td>
+<td>≥ $2M/人/年</td>
+<td>月</td>
+</tr>
+<tr>
+<td>客戶滿意度（CSAT）</td>
+<td>滿意客戶數 / 總受訪客戶數 × 100%</td>
+<td>≥ 85%</td>
+<td>季</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-工程部（engineering）">3. 工程部（Engineering）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>專案準時完成率</td>
+<td>準時完成專案數 / 總專案數 × 100%</td>
+<td>≥ 90%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>設計變更次數</td>
+<td>月度設計變更單數</td>
+<td>≤ 5 次/月</td>
+<td>月</td>
+</tr>
+<tr>
+<td>圖面錯誤率</td>
+<td>錯誤圖面數 / 總發行圖面數 × 100%</td>
+<td>≤ 2%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>BOM 準確率</td>
+<td>正確 BOM / 總 BOM 數 × 100%</td>
+<td>≥ 98%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>新產品導入時程達成率</td>
+<td>準時導入產品數 / 總導入產品數 × 100%</td>
+<td>≥ 85%</td>
+<td>季</td>
+</tr>
+<tr>
+<td>成本改善金額</td>
+<td>透過設計改善節省的成本</td>
+<td>≥ $500K/年</td>
+<td>季</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-研發部（rd）">4. 研發部（R&amp;D）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>研發進度達成率</td>
+<td>完成里程碑數 / 計劃里程碑數 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>新產品營收佔比</td>
+<td>新產品營收 / 總營收 × 100%</td>
+<td>≥ 20%</td>
+<td>季</td>
+</tr>
+<tr>
+<td>專利申請數</td>
+<td>年度專利申請件數</td>
+<td>≥ 5 件/年</td>
+<td>年</td>
+</tr>
+<tr>
+<td>研發費用率</td>
+<td>研發費用 / 營收 × 100%</td>
+<td>5-8%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>產品上市時間</td>
+<td>從立案到量產的平均時間</td>
+<td>≤ 12 個月</td>
+<td>專案</td>
+</tr>
+<tr>
+<td>技術問題解決率</td>
+<td>解決問題數 / 總問題數 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>研發產出比</td>
+<td>新產品營收 / 研發費用</td>
+<td>≥ 3:1</td>
+<td>年</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-製造部（manufacturing）">5. 製造部（Manufacturing）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>產量達成率</td>
+<td>實際產量 / 計劃產量 × 100%</td>
+<td>≥ 98%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>OEE（整體設備效率）</td>
+<td>可用率 × 表現率 × 品質率</td>
+<td>≥ 80%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>良率</td>
+<td>良品數 / 投入數 × 100%</td>
+<td>≥ 98%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>直通率（FPY）</td>
+<td>一次良品數 / 投入數 × 100%</td>
+<td>≥ 95%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>生產週期時間</td>
+<td>平均生產一件產品的時間</td>
+<td>≤ 5 天</td>
+<td>週</td>
+</tr>
+<tr>
+<td>人均產值</td>
+<td>總產值 / 直接人員數</td>
+<td>≥ $500K/人/年</td>
+<td>月</td>
+</tr>
+<tr>
+<td>製造成本</td>
+<td>實際製造成本 / 標準成本 × 100%</td>
+<td>≤ 105%</td>
+<td>月</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-設備部（equipment--facility-engineering）">6. 設備部（Equipment / Facility Engineering）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>設備可動率</td>
+<td>(計劃時間 - 停機時間) / 計劃時間 × 100%</td>
+<td>≥ 95%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>MTBF（平均故障間隔時間）</td>
+<td>總運轉時間 / 故障次數</td>
+<td>≥ 720 小時</td>
+<td>月</td>
+</tr>
+<tr>
+<td>MTTR（平均修復時間）</td>
+<td>總修復時間 / 故障次數</td>
+<td>≤ 2 小時</td>
+<td>月</td>
+</tr>
+<tr>
+<td>預防保養達成率</td>
+<td>完成保養次數 / 計劃保養次數 × 100%</td>
+<td>≥ 98%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>緊急維修次數</td>
+<td>月度緊急維修件數</td>
+<td>≤ 3 次/月</td>
+<td>月</td>
+</tr>
+<tr>
+<td>備品庫存準確率</td>
+<td>實際庫存 / 帳面庫存 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>設備改善專案數</td>
+<td>完成的設備改善專案數</td>
+<td>≥ 2 件/季</td>
+<td>季</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-品管部（quality-assurance）">7. 品管部（Quality Assurance）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>進料檢驗合格率</td>
+<td>合格批次 / 總檢驗批次 × 100%</td>
+<td>≥ 98%</td>
+<td>週</td>
+</tr>
+<tr>
+<td>製程良率</td>
+<td>製程良品數 / 投入數 × 100%</td>
+<td>≥ 98%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>出貨品質 PPM</td>
+<td>客訴不良數 / 出貨總數 × 1,000,000</td>
+<td>≤ 100 ppm</td>
+<td>月</td>
+</tr>
+<tr>
+<td>客訴件數</td>
+<td>月度客訴件數</td>
+<td>≤ 3 件/月</td>
+<td>月</td>
+</tr>
+<tr>
+<td>客訴結案率</td>
+<td>結案件數 / 總客訴件數 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>8D 報告準時率</td>
+<td>準時完成 8D / 總 8D × 100%</td>
+<td>≥ 90%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>內部稽核缺失數</td>
+<td>月度稽核發現的缺失數</td>
+<td>≤ 5 件/月</td>
+<td>月</td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-採購部（purchasing）">8. 採購部（Purchasing）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>採購準交率</td>
+<td>準時交貨筆數 / 總訂單筆數 × 100%</td>
+<td>≥ 95%</td>
+<td>週</td>
+</tr>
+<tr>
+<td>供應商品質合格率</td>
+<td>合格供應商數 / 總供應商數 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>採購成本節減率</td>
+<td>(去年單價 - 今年單價) / 去年單價 × 100%</td>
+<td>≥ 5%</td>
+<td>年</td>
+</tr>
+<tr>
+<td>採購週期時間</td>
+<td>從需求到到貨的平均天數</td>
+<td>≤ 14 天</td>
+<td>月</td>
+</tr>
+<tr>
+<td>緊急採購比例</td>
+<td>緊急訂單數 / 總訂單數 × 100%</td>
+<td>≤ 5%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>供應商交期達成率</td>
+<td>準時交貨訂單數 / 總訂單數 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>合約管理達成率</td>
+<td>執行中合約數 / 到期合約數 × 100%</td>
+<td>100%</td>
+<td>月</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-生管部（production-planning）">9. 生管部（Production Planning）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>計劃達成率</td>
+<td>實際完成數量 / 計劃數量 × 100%</td>
+<td>≥ 95%</td>
+<td>日</td>
+</tr>
+<tr>
+<td>交期達成率</td>
+<td>準時出貨訂單數 / 總訂單數 × 100%</td>
+<td>≥ 95%</td>
+<td>週</td>
+</tr>
+<tr>
+<td>庫存周轉率</td>
+<td>年度銷貨成本 / 平均庫存金額</td>
+<td>≥ 12 次/年</td>
+<td>月</td>
+</tr>
+<tr>
+<td>庫存準確率</td>
+<td>盤點準確品項數 / 總品項數 × 100%</td>
+<td>≥ 98%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>呆滯料金額</td>
+<td>超過 6 個月未使用的料件金額</td>
+<td>≤ $300K</td>
+<td>月</td>
+</tr>
+<tr>
+<td>缺料次數</td>
+<td>因缺料導致停線的次數</td>
+<td>≤ 2 次/月</td>
+<td>月</td>
+</tr>
+<tr>
+<td>產能利用率</td>
+<td>實際產出 / 最大產能 × 100%</td>
+<td>80-90%</td>
+<td>週</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-資訊部（it--information-technology）">10. 資訊部（IT / Information Technology）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系統可用率</td>
+<td>(總時間 - 停機時間) / 總時間 × 100%</td>
+<td>≥ 99.5%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>平均故障修復時間</td>
+<td>總修復時間 / 故障次數</td>
+<td>≤ 4 小時</td>
+<td>月</td>
+</tr>
+<tr>
+<td>服務請求完成率</td>
+<td>完成工單數 / 總工單數 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>專案準時完成率</td>
+<td>準時完成專案數 / 總專案數 × 100%</td>
+<td>≥ 90%</td>
+<td>季</td>
+</tr>
+<tr>
+<td>資安事件數</td>
+<td>月度資安事件數</td>
+<td>0 件</td>
+<td>月</td>
+</tr>
+<tr>
+<td>備份成功率</td>
+<td>成功備份次數 / 總備份次數 × 100%</td>
+<td>100%</td>
+<td>週</td>
+</tr>
+<tr>
+<td>使用者滿意度</td>
+<td>滿意使用者數 / 總受訪者數 × 100%</td>
+<td>≥ 85%</td>
+<td>季</td>
+</tr>
+</tbody>
+</table>
+<h3 id="11-廠務部（facility-management）">11. 廠務部（Facility Management）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公用設施可用率</td>
+<td>(計劃時間 - 停機時間) / 計劃時間 × 100%</td>
+<td>≥ 99%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>能源使用效率</td>
+<td>產值 / 總能源消耗</td>
+<td>持續改善</td>
+<td>月</td>
+</tr>
+<tr>
+<td>用電度數</td>
+<td>月度總用電度數（kWh）</td>
+<td>符合預算</td>
+<td>月</td>
+</tr>
+<tr>
+<td>廢棄物處理達成率</td>
+<td>合規處理量 / 總廢棄物量 × 100%</td>
+<td>100%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>環保法規符合度</td>
+<td>符合項目數 / 總稽核項目數 × 100%</td>
+<td>100%</td>
+<td>季</td>
+</tr>
+<tr>
+<td>廠區維護完成率</td>
+<td>完成維護項目 / 計劃維護項目 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>成本節減金額</td>
+<td>透過節能措施節省的費用</td>
+<td>≥ $100K/年</td>
+<td>年</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-職安部（occupational-safety--health）">12. 職安部（Occupational Safety &amp; Health）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>失能傷害頻率（FR）</td>
+<td>失能傷害次數 × 1,000,000 / 總經歷工時</td>
+<td>0</td>
+<td>月</td>
+</tr>
+<tr>
+<td>失能傷害嚴重率（SR）</td>
+<td>總損失日數 × 1,000,000 / 總經歷工時</td>
+<td>0</td>
+<td>月</td>
+</tr>
+<tr>
+<td>工安事故件數</td>
+<td>月度工安事故總件數</td>
+<td>0 件</td>
+<td>月</td>
+</tr>
+<tr>
+<td>職業災害人次</td>
+<td>發生職業災害的人次</td>
+<td>0 人次</td>
+<td>月</td>
+</tr>
+<tr>
+<td>安全巡檢完成率</td>
+<td>完成巡檢次數 / 計劃巡檢次數 × 100%</td>
+<td>100%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>安全教育訓練時數</td>
+<td>員工平均安全訓練時數</td>
+<td>≥ 12 小時/人/年</td>
+<td>年</td>
+</tr>
+<tr>
+<td>危險源改善完成率</td>
+<td>改善項目數 / 發現危險源數 × 100%</td>
+<td>100%</td>
+<td>月</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-人資部（human-resources）">13. 人資部（Human Resources）</h3>
+<table>
+<thead>
+<tr>
+<th>KPI 名稱</th>
+<th>計算公式</th>
+<th>目標值</th>
+<th>更新頻率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>員工離職率</td>
+<td>離職人數 / 平均在職人數 × 100%</td>
+<td>≤ 10%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>關鍵人才留任率</td>
+<td>留任關鍵人才數 / 總關鍵人才數 × 100%</td>
+<td>≥ 95%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>招募完成率</td>
+<td>實際到職人數 / 計劃招募人數 × 100%</td>
+<td>≥ 90%</td>
+<td>月</td>
+</tr>
+<tr>
+<td>招募週期時間</td>
+<td>從需求到到職的平均天數</td>
+<td>≤ 45 天</td>
+<td>月</td>
+</tr>
+<tr>
+<td>員工滿意度</td>
+<td>滿意員工數 / 總受訪員工數 × 100%</td>
+<td>≥ 80%</td>
+<td>年</td>
+</tr>
+<tr>
+<td>訓練時數達成率</td>
+<td>實際訓練時數 / 計劃時數 × 100%</td>
+<td>≥ 95%</td>
+<td>季</td>
+</tr>
+<tr>
+<td>人均訓練費用</td>
+<td>總訓練費用 / 員工總數</td>
+<td>≥ $5K/人/年</td>
+<td>年</td>
+</tr>
+<tr>
+<td>出勤率</td>
+<td>實際出勤天數 / 應出勤天數 × 100%</td>
+<td>≥ 98%</td>
+<td>月</td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用說明">使用說明</h3>
+<ol>
+<li><p><strong>客製化調整</strong>：以上 KPI 為通用範例，各企業應根據自身產業特性、規模和策略目標調整。</p>
+</li>
+<li><p><strong>優先順序</strong>：建議每個部門選擇 3-5 個最關鍵的 KPI 作為主要追蹤指標。</p>
+</li>
+<li><p><strong>目標設定</strong>：目標值應基於歷史數據、產業標準和企業策略目標來設定。</p>
+</li>
+<li><p><strong>定期檢討</strong>：建議每季度檢討 KPI 的適切性，必要時進行調整。</p>
+</li>
+</ol>
+<hr></hr>
+<h2 id="附錄-d：視覺化元件設計規範">附錄 D：視覺化元件設計規範</h2>
 <h3 id="顏色規範">顏色規範</h3>
 <p><strong>狀態顏色</strong>：</p>
 <ul>
@@ -525,7 +1256,7 @@
 <li>標籤：顯示百分比和類別名稱</li>
 </ul>
 <hr></hr>
-<h2 id="附錄-d：常用-kpi-計算公式">附錄 D：常用 KPI 計算公式</h2>
+<h2 id="附錄-e：常用-kpi-計算公式">附錄 E：常用 KPI 計算公式</h2>
 <h3 id="財務指標">財務指標</h3>
 <p><strong>毛利率</strong></p>
 <pre><code>毛利率 = (營收 - 銷貨成本) / 營收 × 100%
@@ -571,7 +1302,7 @@
 </code></pre><p><strong>庫存周轉天數</strong></p>
 <pre><code>庫存周轉天數 = 平均庫存金額 / (年度銷貨成本 / 365)
 </code></pre><hr></hr>
-<h2 id="附錄-e：相關資源與工具">附錄 E：相關資源與工具</h2>
+<h2 id="附錄-f：相關資源與工具">附錄 F：相關資源與工具</h2>
 <h3 id="bi-平台工具">BI 平台工具</h3>
 <p><strong>商業方案</strong>：</p>
 <ul>
@@ -616,7 +1347,7 @@
 <li>Data Visualization Society：<a href="https://www.datavisualizationsociety.org/" target="_blank">https://www.datavisualizationsociety.org/</a></li>
 </ul>
 <hr></hr>
-<h2 id="附錄-f：專業術語表">附錄 F：專業術語表</h2>
+<h2 id="附錄-g：專業術語表">附錄 G：專業術語表</h2>
 <table>
 <thead>
 <tr>
@@ -710,7 +1441,7 @@
 <p>感謝您閱讀《企業儀表板建立原則》白皮書。</p>
 <p>如有任何問題或建議，請聯繫：</p>
 <ul>
-<li>Email: bi-team@company.com</li>
+<li>Email: hunsonchen@hunson.site</li>
 <li>內部分機: 1234（BI團隊）</li>
 </ul>
 
@@ -752,7 +1483,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"十、附錄","level":"2.10","depth":1,"previous":{"title":"九、持續改進與評估","level":"2.9","depth":1,"path":"docs/09-continuous-improvement.md","ref":"docs/09-continuous-improvement.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"營運績效分析小組","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0","lastUpdate":"2025-11-01"},"title":"企業儀表板建立準則","language":"zh-tw","gitbook":"*","description":"全面的企業級儀表板設計、開發和實施指南"},"file":{"path":"docs/10-appendix.md","mtime":"2025-10-31T23:11:20.456Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-01T00:01:47.467Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"十、附錄","level":"2.10","depth":1,"previous":{"title":"九、持續改進與評估","level":"2.9","depth":1,"path":"docs/09-continuous-improvement.md","ref":"docs/09-continuous-improvement.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"營運績效分析小組","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"1.0.0","lastUpdate":"2025-11-01"},"title":"企業儀表板建立準則","language":"zh-tw","gitbook":"*","description":"全面的企業級儀表板設計、開發和實施指南"},"file":{"path":"docs/10-appendix.md","mtime":"2025-11-01T23:05:59.537Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-01T23:09:09.157Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
